@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name = "author" content = "Xuhui">
+    <style>
+	.labels{width : 180px; 
+	        padding : 0px 0px 0px 80px;
+			text-align : right;
+			vertical-align : top;
+	        display : inline-block;}
+	.fieldsets{background : lightyellow; 
+	           border : 10px solid yellow; 
+	           margin-botton : 10px; 
+			   width : 720px}
+	.zero{width : auto}
+	.one{width : 50px;
+	     height : 20px;
+		 color : white;
+	     display : inline-block;
+	     background-color : red; 
+		 text-align : center;
+		 vertical-align : top}
+	.two{width : 50px;
+	     height : 20px;
+		 color : white;
+	     display : inline-block;
+	     background-color : purple; 
+		 text-align : center;
+		 vertical-align : top
+	}	 
+	</style>
+</head>
+
+<body>
+    <form action = "http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method = "post" enctype = "multipart/form-data">
+    <h1>Please Enter Your Details For Our Dating Website</h1>
+	<fieldset class = "fieldsets">
+	<legend>Your Face</legend>
+	<label for = "your image" class = "labels">Your image:</label>
+       <input type = "file" name = "upload" requried></input><br>
+	<label for = "image preview" class = "labels">Image preview:</label>
+       <img id = "preview" name = "imgpreview"><br>
+	</fieldset>  
+	
+	<fieldset class = "fieldsets">
+	<legend>Your General Details</legend>
+	<label for = "name" class = "labels">Name:</label>
+	   <input type = "text" name = "name" placeholder = "Your full name" required></input><br>
+	<label for = "gender" class = "labels">Gender:</label>
+       <input type = "radio" name = "iq" class = "zero" value = "male">Male</input>
+	   <input type = "radio" name = "iq" class = "zero" value = "female">Female</input><br>
+	<label for = "age" class = "labels">Age:</label>
+	   <input type = "number" name = "age" requried></input><br>
+	<label for "date of birth" class = "labels">Date of birth:</label>
+	   <input type = "date" name = "date of birth"></input><br>
+	<label for = "favorite color" class = "labels">Favorite color:</label>
+	   <input type = "color" name = "favorite color"></input><br>
+	<label for = "which country" class = "labels">Which country:</label>
+	   <select name = "country"><br>
+			<option value = "CN">China</option>
+			<option value = "US">United States</option>
+			<option value = "UK">United Kingdom</option>
+			</select>
+	</fieldset> 
+
+	<fieldset class = "fieldsets">
+	<legend>Your Indicators</legend>
+	<label for = "height" class = "labels">Height:</label>
+	<label for = "short" class = "one">Short</label>
+	     <input type = "range" name = "heightrange" min = "0" max = "100">
+	<label for = "tall" class = "two">Tall</label></input><br>
+	<label for = "salary" class = "labels">Salary:</label>
+	<label for = "poor" class = "one">Poor</label>
+	     <input type = "range" name = "salaryrange"min = "0" max = "100">
+	<label for = "rich" class = "two">Rich</label></input><br>
+	</fieldset>
+
+	<fieldset class = "fieldsets">
+	<legend>Your Contact Information</legend>
+	<label for = "email" class = "labels">Email:</label>
+	   <input type = "email" name = "email" required></input><br>
+	<label for = "mobile" class = "labels">Mobile:</label>
+	   <input type = "tel" name = "mobile"></input><br>
+	<label for = "address" class = "labels">Address:</label>
+	   <textarea name = "address" class = "textarea"></textarea><br>
+	<label for = "mothod to contact you" class = "labels">Method to contact you:</label>
+	   <input type = "checkbox" class = "zero" name = "email">Email</input>
+	   <input type = "checkbox" class = "zero" name = "whatsapp">Wharsapp</input>
+	   <input type = "checkbox" class = "zero" name = "in-app chat">In-app chat</input>
+	</fieldset>
+	</form>
+	<input type = "submit" value = "Submit" name = "submit">
+</body>
+</html>
