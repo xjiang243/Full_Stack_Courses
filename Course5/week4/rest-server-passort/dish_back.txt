@@ -1,0 +1,19 @@
+{
+    "name":"Uthapizza",
+    "image": "images/uthapizza.png",
+    "category": "mains",
+    "label":"Hot",
+    "price":"4.99",
+    "description":"A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoesVidalia onion, Guntur chillies and Buffalo Paneer."
+}
+
+
+{
+    "_id": "58cc168cd45d89254cc60fdf",
+    "name": "Weekend Grand Buffet",
+    "image": "images/buffet.png",
+    "price": 1999,
+    "description": "Updated Test",
+    "__v": 0,
+    "label": "New"
+  }
