@@ -1,2 +1,2 @@
 # Full_Stack_Developer
-All Source code from Exercies of hong kong university of science and technology course
+All Source code from Assignment of Hong Kong University of Science and Technology Courses
